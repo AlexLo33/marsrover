@@ -1,3 +1,86 @@
 .App {
-  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-color: rgb(222, 111, 20);
+    background-image: url('./assets/img/bg.jpg');
+    background-size: cover;
+    position: relative;
+
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 50px;
+
+            textarea,
+            input {
+                resize: none;
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-family: 'Montserrat', sans-serif;
+                color: orange;
+                font-weight: bold;
+                border: solid 3px orange;
+            }
+
+            input {
+                background-color: rgb(46, 42, 42);
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+                padding: 10px 50px;
+                transition: .3s ease-in-out all;
+
+                &:hover {
+                    opacity: 75%;
+                }
+            }
+        }
+
+        .robot-zone {
+            width: 800px;
+            border: solid 3px orange;
+            border-radius: 20px;
+            height: 300px;
+            margin: 50px auto auto auto;
+            background-color: white;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        position: relative;
+        width: fit-content;
+        margin: 50px auto auto auto;
+
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            bottom: -4px;
+            width: 75%;
+            height: 3px;
+            background-color: orange;
+        }
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
 }
