@@ -1,0 +1,9 @@
+.Rover {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('/images/vehicle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .3s ease;
+}
