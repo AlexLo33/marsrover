@@ -1,0 +1,15 @@
+.InputOutput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .input,
+  .output {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding-top: 10px;
+    margin: 0 10px;
+  }
+}
