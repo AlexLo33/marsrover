@@ -12,11 +12,6 @@ class App extends Component {
   componentDidUpdate(prevProps) {
     const { rovers } = this.props;
 
-    // If there was no rovers, and now there is some rovers, then move them
-    if (prevProps.rovers.length === 0 && rovers.length > 0) {
-      this.moveRovers();
-    }
-
     // If there is rovers, and some of them still have some moves, then move them
     if (
       rovers.length > 0 &&
